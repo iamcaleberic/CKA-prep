@@ -1,0 +1,11 @@
+---- persistent Volumes ----
+- large pool of storage uses can carve out pieces from
+
+--- persistent volume claim ---
+-  the claim (carve out) can be made using the kubernetes object - persistent volume claim
+- Access modes
+  - ReadOnlyMany
+  - ReadWriteOnce
+  - ReadWriteMany
+-  every pvc is bound to a persistent volume
+- one to one relationship between pvs' and pvcs'

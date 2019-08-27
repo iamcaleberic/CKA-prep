@@ -1,2 +1,2 @@
 # CKA-prep
-CKA prep tasks
+CKA prep notes

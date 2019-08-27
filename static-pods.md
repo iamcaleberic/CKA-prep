@@ -1,0 +1,12 @@
+---- static pods ----
+- pods controlled by kubelet all on its own with out other components of the control plane
+- created,updated or deleted by addition of a file, updating of the path, or deletion of file respectively.
+- created by adding the file to the defined manifests path
+- flag passed to kubelet service is `--pod-manifest-path=<static pod manifests path>`
+- alternatively you can provide a path to another config file using `--config=someconfig.yaml` flag
+- the contents of such a file for static pods could be `staticPodPath: <static pod manifests path>`
+- listing of the pods can be done using `docker ps` if we dont have the rest of the control plane components
+- kubelet can create a pod from different sources through the api-server or the static manifests, the
+  api-server is aware of the static pods but only read only actions can be performed through the api-server
+- You can use the static pods to deploy the control plane components (hence why the control plane components appear as pods)
+- Kube scheduler has no effect on static pods

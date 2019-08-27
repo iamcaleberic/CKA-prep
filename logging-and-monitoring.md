@@ -1,0 +1,9 @@
+--- monitoring ---
+- Metrics server gives a short overview of resource usage but its in memory so it does not store long term metrics
+- Some exmaple metrics commands
+  - kubectl top pods
+  - kubectl top nodes
+--- logging ---
+- To get logs for resources we use `kubectl get logs <resource>`
+- Getting logs for multi container pods requires a container name to be specified
+  - kubectl get logs -f <pod > <container-name>
